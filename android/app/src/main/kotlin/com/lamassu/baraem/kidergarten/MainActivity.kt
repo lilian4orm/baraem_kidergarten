@@ -1,4 +1,4 @@
-package com.example.lamassu_baraem_kidergarten
+package com.lamassu.baraem.kidergarten
 
 import io.flutter.embedding.android.FlutterActivity
 

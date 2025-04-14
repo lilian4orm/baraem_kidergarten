@@ -1,0 +1,258 @@
+{
+    "error": false,
+    "results": {
+        "account": {
+            "_id": "660a8e75251e10aa925d5307",
+            "account_name": "ليليان احمد كاظم محمد ",
+            "account_nearest_point": null,
+            "account_area": null,
+            "account_alley": null,
+            "account_mobile": "07826212508",
+            "account_mobile_father": null,
+            "account_mobile_mother": null,
+            "account_division": [
+                {
+                    "class_name": "Kg2",
+                    "leader": "A ( SEVEN DWARFS CLASS  )",
+                    "lecture_amount": 0,
+                    "_id": "64bf7890f92eedf2740114f3"
+                },
+                {
+                    "class_name": "Kg3",
+                    "leader": "C (GARFIELD CLASS )",
+                    "lecture_amount": null,
+                    "_id": "64dbb0bf6add75d5d67cf32b"
+                }
+            ],
+            "account_gender": null,
+            "account_max_vacation": null,
+            "isAccountCanSendNotification": true,
+            "account_document": {
+                "certificate_national_id": null,
+                "certificate_national_old": null,
+                "certificate_passport": null,
+                "certificate_nationality": null,
+                "certificate_address": null,
+                "account_img_id": null,
+                "father_img_id": null,
+                "mother_img_id": null,
+                "assistance_img_id": null
+            },
+            "account_address": "البيت الثاني",
+            "account_img": "../storage/account/account_img-1712185040057_IUWja.jpg",
+            "account_start_date": null,
+            "account_notification_register": null,
+            "account_zoom": null,
+            "account_salary": null,
+            "account_delete_reason": null,
+            "account_card_number": null,
+            "account_car_color": null,
+            "account_car_number": null,
+            "is_deleted_from_student_has_no_bills": false,
+            "account_subject": null,
+            "isAccountUploadedFile": false,
+            "account_registration_number": null,
+            "created_at": 1705976467109,
+            "createdAt": "2024-04-01T10:37:41.657Z",
+            "updatedAt": "2025-04-14T19:55:36.962Z",
+            "__v": 0,
+            "school": {
+                "_id": "64bede0af92eedf2740112f9",
+                "school_name": "روضة سكند هوم الأهلية ",
+                "school_description": "في (روضة وحضانة البيت الثاني) نحن مسؤولون عن رعاية أطفالكم وتنشئتهم النشأة الفكرية العلمية الصحيحة، من خلال نظام تعليم على المنهج البريطاني.\r\n\r\nمن أجل متابعتكم المستمرة بغية الاطمئنان، تتوفر في المبنى كاميرات مفتوحة على مدار الساعة (أونلاين).\r\n\r\nسنكون حريصين على تعليم أطفالكم الاحترام والمحبة والإبداع والتميز، في بيئة صحية تهدف لتنشئة جيل قويم عظيم.\r\n\r\nمعنا ستجدون حقاً… البيت الثاني..",
+                "school_logo": "../storage/school/school_logo-1727965980926_YllqP.jpg",
+                "school_img": "../storage/school/school_img-1727965980926_IBq0S.jpg",
+                "school_website": "https://secondhome-iq.com/",
+                "school_facebook": "https://www.facebook.com/profile.php?id=100068737056216&mibextid=LQQJ4d",
+                "school_whatsapp": "0",
+                "school_phone": "07801101080",
+                "school_google_map": null,
+                "school_location": "العامرية ",
+                "school_currency": "IQD",
+                "school_admin_note": null,
+                "school_features": {
+                    "features_finger_id": false,
+                    "features_absence": true,
+                    "features_teachers_absence": true,
+                    "features_review": true,
+                    "features_dailyExam": true,
+                    "features_drivers": true,
+                    "features_exams": true,
+                    "features_notifications": true,
+                    "features_chat": true,
+                    "features_gps": false,
+                    "features_schedule_weekly": true,
+                    "features_live": false,
+                    "features_latest_news": true,
+                    "features_degrees": true,
+                    "features_subject": true,
+                    "features_employee": true,
+                    "features_accountant": true
+                },
+                "school_subjects": [
+                    {
+                        "subject_name": "رياضيات",
+                        "_id": "64bede0af92eedf2740112fa"
+                    },
+                    {
+                        "subject_name": "اللغة الانكليزية",
+                        "_id": "64bede0af92eedf2740112fb"
+                    },
+                    {
+                        "subject_name": "اللغة الفرنسية",
+                        "_id": "64bede0af92eedf2740112fd"
+                    },
+                    {
+                        "subject_name": "اللغة العربية",
+                        "_id": "64bede0af92eedf2740112fe"
+                    },
+                    {
+                        "subject_name": "اسلامية",
+                        "_id": "64bede0af92eedf274011300"
+                    },
+                    {
+                        "subject_name": "علوم",
+                        "_id": "64bede0af92eedf274011303"
+                    },
+                    {
+                        "subject_name": "BRAINY ROBOT ",
+                        "_id": "64dd1f4b6add75d5d67d3342"
+                    },
+                    {
+                        "subject_name": "مرسم",
+                        "_id": "64dd1f5a6add75d5d67d33b1"
+                    },
+                    {
+                        "subject_name": "رياضة",
+                        "_id": "64dd1f636add75d5d67d3421"
+                    },
+                    {
+                        "subject_name": "اخلاقية",
+                        "_id": "64dd1f736add75d5d67d3492"
+                    },
+                    {
+                        "subject_name": "قصة",
+                        "_id": "64dd1f7e6add75d5d67d3504"
+                    },
+                    {
+                        "subject_name": "لغة",
+                        "_id": "64dd21ac6add75d5d67d3af4"
+                    },
+                    {
+                        "subject_name": "activity",
+                        "_id": "650f0ff5ff699e3efc01f802"
+                    },
+                    {
+                        "subject_name": "معلومات عامة",
+                        "_id": "650f1038ff699e3efc01f8ba"
+                    },
+                    {
+                        "subject_name": "اختبارات",
+                        "_id": "65804c32fd5a77c0c920321e"
+                    }
+                ],
+                "created_at": 1689891943848,
+                "school_class": [
+                    {
+                        "class_name": "Kg2",
+                        "leader": " C (CARE BEARS CLASS )",
+                        "lecture_amount": 0,
+                        "_id": "64bf787ff92eedf2740114b3"
+                    },
+                    {
+                        "class_name": "Kg2",
+                        "leader": " D (AVOCADO CLASS )",
+                        "lecture_amount": null,
+                        "_id": "64bf7887f92eedf2740114de"
+                    },
+                    {
+                        "class_name": "Kg2",
+                        "leader": "A ( SEVEN DWARFS CLASS  )",
+                        "lecture_amount": 0,
+                        "_id": "64bf7890f92eedf2740114f3"
+                    },
+                    {
+                        "class_name": "Kg2",
+                        "leader": "B(NILS CLASS )",
+                        "lecture_amount": 0,
+                        "_id": "64bf789cf92eedf274011537"
+                    },
+                    {
+                        "class_name": "Kg3",
+                        "leader": "E (POKEMON CLASS)",
+                        "lecture_amount": 0,
+                        "_id": "64d8a72dc4c3ab6b972cbf3b"
+                    },
+                    {
+                        "class_name": "Kg3",
+                        "leader": "B (ALOEVERA CLASS)",
+                        "lecture_amount": null,
+                        "_id": "64dbb0b36add75d5d67cf2ca"
+                    },
+                    {
+                        "class_name": "Kg3",
+                        "leader": "C (GARFIELD CLASS )",
+                        "lecture_amount": null,
+                        "_id": "64dbb0bf6add75d5d67cf32b"
+                    },
+                    {
+                        "class_name": "Kg3",
+                        "leader": "D (THE GIRAFFE CLASS )",
+                        "lecture_amount": null,
+                        "_id": "64dbb0c86add75d5d67cf38c"
+                    },
+                    {
+                        "class_name": "Kg3",
+                        "leader": "A (CAT CLASS )",
+                        "lecture_amount": 0,
+                        "_id": "64dbb0d56add75d5d67cf3ed"
+                    },
+                    {
+                        "class_name": "تمهيدي",
+                        "leader": "L",
+                        "lecture_amount": 0,
+                        "_id": "670425fb99d1682a2624e19c"
+                    }
+                ],
+                "createdAt": "2023-07-24T20:24:42.746Z",
+                "updatedAt": "2024-11-28T08:14:23.126Z",
+                "__v": 0,
+                "exchange_rate": 1300,
+                "is_kindergarten": true,
+                "school_pages": [
+                    "home,accountant,classSchool,subject,teachers,absenceTeacher,students,absence,review,dailyExam,exams,degrees,schedule,notification,latestNews,employees,connectUs,reviewDaily,lesson,drivers,stream"
+                ],
+                "school_en_name": "s.h.k.com",
+                "school_qr_code": "../storage/school/school_qr_code-1727965980926_7BQgj.png"
+            },
+            "account_division_filter_year": [
+                {
+                    "class_name": "Kg3",
+                    "leader": "C (GARFIELD CLASS )",
+                    "lecture_amount": null,
+                    "_id": "64dbb0bf6add75d5d67cf32b"
+                }
+            ],
+            "account_division_current": {
+                "class_name": "Kg3",
+                "leader": "C (GARFIELD CLASS )",
+                "lecture_amount": null,
+                "_id": "64dbb0bf6add75d5d67cf32b"
+            }
+        },
+        "setting": [
+            {
+                "_id": "66b414a101e9e91f14a8601a",
+                "setting_year": "2024-2025",
+                "created_at": 1718026108935
+            },
+            {
+                "_id": "64baa83764a6c8f2b5128543",
+                "setting_year": "2023-2024",
+                "created_at": 1687004597900
+            }
+        ]
+    },
+    "content_url": "https://api.lm-kids.com/",
+    "message": ""
+}

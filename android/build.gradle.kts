@@ -1,3 +1,13 @@
+buildscript {
+    repositories {  // ✅ Add this block to fix the issue
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.google.gms:google-services:4.4.2") // Ensure the correct version
+    }
+}
+
 allprojects {
     repositories {
         google()

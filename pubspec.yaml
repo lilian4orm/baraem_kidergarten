@@ -1,4 +1,4 @@
-name: lamassu_baraem_kidergarten
+name: super_baraem_kidergarten
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -44,21 +44,14 @@ dependencies:
   modal_bottom_sheet: ^3.0.0
   cached_network_image: ^3.2.3
   lottie: ^2.3.2
-
-
- #hardware
-  camera: ^0.10.6
-  nfc_manager: ^3.5.0
+  flutter_staggered_animations: ^1.1.1
 
  #localdatabase 
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   
   
- #thirdparty 
-
-  # newrelic_mobile: ^1.0.4
-  sentry_flutter: ^8.1.0
+ #thirdparty
 
  #others
   
@@ -73,21 +66,12 @@ dependencies:
   crypto: ^3.0.3 
 
   animated_size_and_fade: ^3.0.1
-  root_checker_plus: ^0.0.3
   device_info_plus: ^11.1.1
 
   geolocator: ^10.0.1
   image_cropper: ^9.0.0
   location: ^5.0.3
   share_plus: ^7.2.1
-  zendesk_messaging: 2.8.0
-
-
-  flutter_document_reader_api: ^7.6.122
-  flutter_document_reader_core_fullrfid: ^7.6.47
-
-  flutter_face_api: ^6.4.875
-  flutter_face_core_basic: ^6.4.242
 
   jwt_decoder: ^2.0.1
   badges: ^3.1.2
@@ -99,14 +83,9 @@ dependencies:
   flutter_image_compress: ^2.3.0
   infinite_scroll_pagination: ^4.0.0
   open_settings_plus: ^0.3.3
-  flutter_dotenv: ^5.2.1
-  flutter_full_security: 
-      git: https://github.com/AliJawad93/flutter_full_security.git
-  
-  flutter_udid: ^3.0.0
   file_picker: ^8.3.1
   flutter_inappwebview: ^6.1.5
-
+  mobile_device_identifier: ^0.0.3
   
 
 
@@ -136,12 +115,10 @@ flutter:
     - assets/fonts/somar/
     - assets/fonts/somar/SomarSans-Medium-edited.otf
     - assets/fonts/somar/SomarSans-Bold-edited.otf
-   
-  
     - assets/animation/
-    - assets/animation/nfc/
-    - assets/certificates/
-    - .env
+    - assets/icons/
+    - assets/icons/kinder/
+
 
     
 
