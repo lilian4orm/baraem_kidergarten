@@ -14,7 +14,6 @@ import 'package:super_baraem_kidergarten/src/utils/utils.dart';
 @lazySingleton
 class DioClient {
   Dio instance(String? url) {
-    // final token = LocalDatabase.getToken();
     var dio = Dio();
 
     // dio.options.headers['X-App-Language'] =

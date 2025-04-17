@@ -11,6 +11,7 @@ _$ProfileResponseImpl _$$ProfileResponseImplFromJson(
     _$ProfileResponseImpl(
       error: json['error'] as bool,
       results: ProfileModel.fromJson(json['results'] as Map<String, dynamic>),
+      contentUrl: json['content_url'] as String?,
     );
 
 Map<String, dynamic> _$$ProfileResponseImplToJson(
@@ -18,6 +19,7 @@ Map<String, dynamic> _$$ProfileResponseImplToJson(
     <String, dynamic>{
       'error': instance.error,
       'results': instance.results,
+      'content_url': instance.contentUrl,
     };
 
 _$ProfileModelImpl _$$ProfileModelImplFromJson(Map<String, dynamic> json) =>

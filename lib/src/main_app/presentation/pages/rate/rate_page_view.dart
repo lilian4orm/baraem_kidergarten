@@ -7,97 +7,12 @@ class RatePageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFDEF5D9), // Light green background
-      body: SafeArea(
+      body: const SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          padding: EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const SizedBox(height: 16),
-              _buildTopBar(),
-              const SizedBox(height: 16),
-              _buildSearchBar(),
-              const SizedBox(height: 24),
-              _buildWeekdayRow(),
-              const SizedBox(height: 24),
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          _buildCircularWidget(
-                            Colors.lightBlue.shade100,
-                            Icons.water_drop,
-                            '300',
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Column(
-                              children: [
-                                _buildSmallWidget(
-                                  'Steps',
-                                  '06',
-                                  Colors.pink.shade100,
-                                  Icons.directions_walk,
-                                ),
-                                const SizedBox(height: 12),
-                                Row(
-                                  children: [
-                                    Expanded(
-                                      child: _buildSmallWidget(
-                                        'Tue',
-                                        '14',
-                                        Colors.green.shade100,
-                                        Icons.calendar_today,
-                                        true,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 12),
-                                    Expanded(
-                                      child: _buildSmallWidget(
-                                        '',
-                                        '...',
-                                        Colors.white,
-                                        Icons.more_horiz,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 12),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: _buildRectangularWidget(
-                              '1200',
-                              'kcal',
-                              Colors.amber.shade100,
-                              Icons.bolt,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: _buildRectangularWidget(
-                              'Strength',
-                              '10 Minutes',
-                              Colors.deepPurple.shade100,
-                              Icons.fitness_center,
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 16),
-                      _buildWorkoutCard(),
-                    ],
-                  ),
-                ),
-              ),
-            ],
+            children: [],
           ),
         ),
       ),

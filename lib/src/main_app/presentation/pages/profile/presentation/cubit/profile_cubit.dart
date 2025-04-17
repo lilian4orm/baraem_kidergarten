@@ -26,12 +26,14 @@ class ProfileCubit extends Cubit<ProfileState> {
         dataFailed: null,
       ),
     );
+
     final result = await dataSource.getProfileApi();
     if (result is DataSuccess) {
       emit(
         state.copyWith(
           remoteDataStatus: RemoteDataStatus.loaded,
           profileModel: result.data!.results,
+          contentUrl: result.data!.contentUrl,
         ),
       );
     } else if (result is DataFailed) {

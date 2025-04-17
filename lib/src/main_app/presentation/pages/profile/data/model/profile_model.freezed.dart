@@ -22,6 +22,8 @@ ProfileResponse _$ProfileResponseFromJson(Map<String, dynamic> json) {
 mixin _$ProfileResponse {
   bool get error => throw _privateConstructorUsedError;
   ProfileModel get results => throw _privateConstructorUsedError;
+  @JsonKey(name: "content_url")
+  String? get contentUrl => throw _privateConstructorUsedError;
 
   /// Serializes this ProfileResponse to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -39,7 +41,10 @@ abstract class $ProfileResponseCopyWith<$Res> {
           ProfileResponse value, $Res Function(ProfileResponse) then) =
       _$ProfileResponseCopyWithImpl<$Res, ProfileResponse>;
   @useResult
-  $Res call({bool error, ProfileModel results});
+  $Res call(
+      {bool error,
+      ProfileModel results,
+      @JsonKey(name: "content_url") String? contentUrl});
 
   $ProfileModelCopyWith<$Res> get results;
 }
@@ -61,6 +66,7 @@ class _$ProfileResponseCopyWithImpl<$Res, $Val extends ProfileResponse>
   $Res call({
     Object? error = null,
     Object? results = null,
+    Object? contentUrl = freezed,
   }) {
     return _then(_value.copyWith(
       error: null == error
@@ -71,6 +77,10 @@ class _$ProfileResponseCopyWithImpl<$Res, $Val extends ProfileResponse>
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
               as ProfileModel,
+      contentUrl: freezed == contentUrl
+          ? _value.contentUrl
+          : contentUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 
@@ -93,7 +103,10 @@ abstract class _$$ProfileResponseImplCopyWith<$Res>
       __$$ProfileResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({bool error, ProfileModel results});
+  $Res call(
+      {bool error,
+      ProfileModel results,
+      @JsonKey(name: "content_url") String? contentUrl});
 
   @override
   $ProfileModelCopyWith<$Res> get results;
@@ -114,6 +127,7 @@ class __$$ProfileResponseImplCopyWithImpl<$Res>
   $Res call({
     Object? error = null,
     Object? results = null,
+    Object? contentUrl = freezed,
   }) {
     return _then(_$ProfileResponseImpl(
       error: null == error
@@ -124,6 +138,10 @@ class __$$ProfileResponseImplCopyWithImpl<$Res>
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
               as ProfileModel,
+      contentUrl: freezed == contentUrl
+          ? _value.contentUrl
+          : contentUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -131,7 +149,10 @@ class __$$ProfileResponseImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$ProfileResponseImpl implements _ProfileResponse {
-  const _$ProfileResponseImpl({required this.error, required this.results});
+  const _$ProfileResponseImpl(
+      {required this.error,
+      required this.results,
+      @JsonKey(name: "content_url") this.contentUrl});
 
   factory _$ProfileResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$ProfileResponseImplFromJson(json);
@@ -140,10 +161,13 @@ class _$ProfileResponseImpl implements _ProfileResponse {
   final bool error;
   @override
   final ProfileModel results;
+  @override
+  @JsonKey(name: "content_url")
+  final String? contentUrl;
 
   @override
   String toString() {
-    return 'ProfileResponse(error: $error, results: $results)';
+    return 'ProfileResponse(error: $error, results: $results, contentUrl: $contentUrl)';
   }
 
   @override
@@ -152,12 +176,14 @@ class _$ProfileResponseImpl implements _ProfileResponse {
         (other.runtimeType == runtimeType &&
             other is _$ProfileResponseImpl &&
             (identical(other.error, error) || other.error == error) &&
-            (identical(other.results, results) || other.results == results));
+            (identical(other.results, results) || other.results == results) &&
+            (identical(other.contentUrl, contentUrl) ||
+                other.contentUrl == contentUrl));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, error, results);
+  int get hashCode => Object.hash(runtimeType, error, results, contentUrl);
 
   /// Create a copy of ProfileResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -178,8 +204,10 @@ class _$ProfileResponseImpl implements _ProfileResponse {
 
 abstract class _ProfileResponse implements ProfileResponse {
   const factory _ProfileResponse(
-      {required final bool error,
-      required final ProfileModel results}) = _$ProfileResponseImpl;
+          {required final bool error,
+          required final ProfileModel results,
+          @JsonKey(name: "content_url") final String? contentUrl}) =
+      _$ProfileResponseImpl;
 
   factory _ProfileResponse.fromJson(Map<String, dynamic> json) =
       _$ProfileResponseImpl.fromJson;
@@ -188,6 +216,9 @@ abstract class _ProfileResponse implements ProfileResponse {
   bool get error;
   @override
   ProfileModel get results;
+  @override
+  @JsonKey(name: "content_url")
+  String? get contentUrl;
 
   /// Create a copy of ProfileResponse
   /// with the given fields replaced by the non-null parameter values.

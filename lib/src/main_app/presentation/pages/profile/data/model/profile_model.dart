@@ -8,6 +8,7 @@ class ProfileResponse with _$ProfileResponse {
   const factory ProfileResponse({
     required bool error,
     required ProfileModel results,
+    @JsonKey(name: "content_url") String? contentUrl,
   }) = _ProfileResponse;
 
   factory ProfileResponse.fromJson(Map<String, dynamic> json) =>

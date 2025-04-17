@@ -85,6 +85,5 @@ class LocalDatabase {
   static void deleteData() {
     Hive.box(appKeyStorage).delete("loginCredential");
     Hive.box(appKeyStorage).delete("fcm_token_storage_key");
-    Hive.box(appKeyStorage).delete("loacal_accounts_storage_key");
   }
 }

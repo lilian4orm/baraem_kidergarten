@@ -34,4 +34,22 @@ class AuthCubitCubit extends Cubit<AuthCubitState> {
       return;
     }
   }
+
+  logoutEvent() async {
+    emit(state.copyWith(remoteDataStatus: RemoteDataStatus.loading));
+    final result = await authDataSource.logoutApi();
+    if (result is DataFailed) {
+      emit(
+        state.copyWith(
+          remoteDataStatus: RemoteDataStatus.error,
+          dataFailed: result,
+        ),
+      );
+      return;
+    }
+    if (result is DataSuccess) {
+      emit(state.copyWith(remoteDataStatus: RemoteDataStatus.loaded));
+      return;
+    }
+  }
 }

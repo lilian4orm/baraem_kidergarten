@@ -23,16 +23,24 @@ class SkeletonLoading extends HookWidget {
     final stateLoading = useState(false);
     final first = useState(true);
     final theme = Theme.of(context);
+    final isMounted = useIsMounted(); // ✅ Add this
+
     if (first.value) {
       first.value = false;
 
-      Future.delayed(
-        const Duration(milliseconds: 300),
-      ).then((value) => stateLoading.value = true);
+      Future.delayed(const Duration(milliseconds: 300)).then((_) {
+        if (isMounted()) {
+          stateLoading.value = true; // ✅ Only update if still mounted
+        }
+      });
     }
 
     return AnimatedOpacity(
-      onEnd: () => stateLoading.value = !stateLoading.value,
+      onEnd: () {
+        if (isMounted()) {
+          stateLoading.value = !stateLoading.value;
+        }
+      },
       duration: const Duration(milliseconds: 1000),
       opacity: stateLoading.value ? 0.2 : 1,
       child: Container(

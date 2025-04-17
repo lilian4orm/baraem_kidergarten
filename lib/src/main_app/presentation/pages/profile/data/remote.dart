@@ -6,10 +6,9 @@ import 'package:super_baraem_kidergarten/src/utils/injector.dart';
 
 class ProfileDataSource {
   Future<DataState<ProfileResponse>> getProfileApi() async {
-    final response = await getIt<DioClient>()
+    final response = await (getIt<DioClient>()
         .instance('')
-        .get(profileUrl)
-        .resultWithoutData(ProfileResponse.fromJson);
+        .get(profileUrl)).resultWithoutData(ProfileResponse.fromJson);
     return response;
   }
 }

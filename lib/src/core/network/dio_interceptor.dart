@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:jwt_decoder/jwt_decoder.dart';
 import 'package:super_baraem_kidergarten/src/core/functions/functions.dart';
 import 'package:super_baraem_kidergarten/src/core/local_db/local_db.dart';
 import 'package:super_baraem_kidergarten/src/main_app/auth/data/model/login_model.dart';
@@ -32,24 +31,24 @@ class DioInterceptor extends InterceptorsWrapper {
 
     // check if tokens have already expired or not
 
-    final tokenHasExpired = JwtDecoder.isExpired(loginModelDb!.token);
+    // final tokenHasExpired = JwtDecoder.isExpired(loginModelDb!.token);
 
-    if (tokenHasExpired) {
-      LoginModel? loginModel = await refreshToken(loginModelDb.refreshToken!);
+    // if (tokenHasExpired) {
+    //   LoginModel? loginModel = await refreshToken(loginModelDb.refreshToken!);
 
-      if (loginModel?.token == null) {
-        final error = DioError(requestOptions: options);
-        return handler.reject(error);
-      }
-      await LocalDatabase.saveLoginCredential(loginModel!);
+    //   if (loginModel?.token == null) {
+    //     final error = DioError(requestOptions: options);
+    //     return handler.reject(error);
+    //   }
+    //   await LocalDatabase.saveLoginCredential(loginModel!);
 
-      options.headers["Authorization"] = loginModel.token;
+    //   options.headers["Authorization"] = loginModel.token;
 
-      return handler.next(options);
-    }
+    //   return handler.next(options);
+    // }
 
     // add access token to the request header
-    options.headers["Authorization"] = loginModelDb.token;
+    options.headers["Authorization"] = loginModelDb?.token;
     return handler.next(options);
   }
 

@@ -34,7 +34,7 @@ class FirebaseNotification {
     final platformConfig = DefaultFirebaseOptions.currentPlatform;
     try {
       await Firebase.initializeApp(
-        name: "super_baraem_kidergarten",
+        // name: "super_baraem_kidergarten",
         options: platformConfig,
       );
 

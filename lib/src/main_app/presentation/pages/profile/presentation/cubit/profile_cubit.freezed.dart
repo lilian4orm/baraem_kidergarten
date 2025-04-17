@@ -18,6 +18,7 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$ProfileState {
   RemoteDataStatus get remoteDataStatus => throw _privateConstructorUsedError;
   ProfileModel? get profileModel => throw _privateConstructorUsedError;
+  String? get contentUrl => throw _privateConstructorUsedError;
   LocalAccounts? get localAccounts => throw _privateConstructorUsedError;
   DataFailed<dynamic>? get dataFailed => throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -25,6 +26,7 @@ mixin _$ProfileState {
     required TResult Function(
             RemoteDataStatus remoteDataStatus,
             ProfileModel? profileModel,
+            String? contentUrl,
             LocalAccounts? localAccounts,
             DataFailed<dynamic>? dataFailed)
         initial,
@@ -35,6 +37,7 @@ mixin _$ProfileState {
     TResult? Function(
             RemoteDataStatus remoteDataStatus,
             ProfileModel? profileModel,
+            String? contentUrl,
             LocalAccounts? localAccounts,
             DataFailed<dynamic>? dataFailed)?
         initial,
@@ -45,6 +48,7 @@ mixin _$ProfileState {
     TResult Function(
             RemoteDataStatus remoteDataStatus,
             ProfileModel? profileModel,
+            String? contentUrl,
             LocalAccounts? localAccounts,
             DataFailed<dynamic>? dataFailed)?
         initial,
@@ -84,6 +88,7 @@ abstract class $ProfileStateCopyWith<$Res> {
   $Res call(
       {RemoteDataStatus remoteDataStatus,
       ProfileModel? profileModel,
+      String? contentUrl,
       LocalAccounts? localAccounts,
       DataFailed<dynamic>? dataFailed});
 
@@ -108,6 +113,7 @@ class _$ProfileStateCopyWithImpl<$Res, $Val extends ProfileState>
   $Res call({
     Object? remoteDataStatus = null,
     Object? profileModel = freezed,
+    Object? contentUrl = freezed,
     Object? localAccounts = freezed,
     Object? dataFailed = freezed,
   }) {
@@ -120,6 +126,10 @@ class _$ProfileStateCopyWithImpl<$Res, $Val extends ProfileState>
           ? _value.profileModel
           : profileModel // ignore: cast_nullable_to_non_nullable
               as ProfileModel?,
+      contentUrl: freezed == contentUrl
+          ? _value.contentUrl
+          : contentUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
       localAccounts: freezed == localAccounts
           ? _value.localAccounts
           : localAccounts // ignore: cast_nullable_to_non_nullable
@@ -171,6 +181,7 @@ abstract class _$$InitialImplCopyWith<$Res>
   $Res call(
       {RemoteDataStatus remoteDataStatus,
       ProfileModel? profileModel,
+      String? contentUrl,
       LocalAccounts? localAccounts,
       DataFailed<dynamic>? dataFailed});
 
@@ -195,6 +206,7 @@ class __$$InitialImplCopyWithImpl<$Res>
   $Res call({
     Object? remoteDataStatus = null,
     Object? profileModel = freezed,
+    Object? contentUrl = freezed,
     Object? localAccounts = freezed,
     Object? dataFailed = freezed,
   }) {
@@ -207,6 +219,10 @@ class __$$InitialImplCopyWithImpl<$Res>
           ? _value.profileModel
           : profileModel // ignore: cast_nullable_to_non_nullable
               as ProfileModel?,
+      contentUrl: freezed == contentUrl
+          ? _value.contentUrl
+          : contentUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
       localAccounts: freezed == localAccounts
           ? _value.localAccounts
           : localAccounts // ignore: cast_nullable_to_non_nullable
@@ -225,6 +241,7 @@ class _$InitialImpl implements _Initial {
   const _$InitialImpl(
       {this.remoteDataStatus = RemoteDataStatus.ideal,
       this.profileModel,
+      this.contentUrl,
       this.localAccounts,
       this.dataFailed});
 
@@ -234,13 +251,15 @@ class _$InitialImpl implements _Initial {
   @override
   final ProfileModel? profileModel;
   @override
+  final String? contentUrl;
+  @override
   final LocalAccounts? localAccounts;
   @override
   final DataFailed<dynamic>? dataFailed;
 
   @override
   String toString() {
-    return 'ProfileState.initial(remoteDataStatus: $remoteDataStatus, profileModel: $profileModel, localAccounts: $localAccounts, dataFailed: $dataFailed)';
+    return 'ProfileState.initial(remoteDataStatus: $remoteDataStatus, profileModel: $profileModel, contentUrl: $contentUrl, localAccounts: $localAccounts, dataFailed: $dataFailed)';
   }
 
   @override
@@ -252,6 +271,8 @@ class _$InitialImpl implements _Initial {
                 other.remoteDataStatus == remoteDataStatus) &&
             (identical(other.profileModel, profileModel) ||
                 other.profileModel == profileModel) &&
+            (identical(other.contentUrl, contentUrl) ||
+                other.contentUrl == contentUrl) &&
             (identical(other.localAccounts, localAccounts) ||
                 other.localAccounts == localAccounts) &&
             (identical(other.dataFailed, dataFailed) ||
@@ -259,8 +280,8 @@ class _$InitialImpl implements _Initial {
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, remoteDataStatus, profileModel, localAccounts, dataFailed);
+  int get hashCode => Object.hash(runtimeType, remoteDataStatus, profileModel,
+      contentUrl, localAccounts, dataFailed);
 
   /// Create a copy of ProfileState
   /// with the given fields replaced by the non-null parameter values.
@@ -276,11 +297,13 @@ class _$InitialImpl implements _Initial {
     required TResult Function(
             RemoteDataStatus remoteDataStatus,
             ProfileModel? profileModel,
+            String? contentUrl,
             LocalAccounts? localAccounts,
             DataFailed<dynamic>? dataFailed)
         initial,
   }) {
-    return initial(remoteDataStatus, profileModel, localAccounts, dataFailed);
+    return initial(
+        remoteDataStatus, profileModel, contentUrl, localAccounts, dataFailed);
   }
 
   @override
@@ -289,12 +312,13 @@ class _$InitialImpl implements _Initial {
     TResult? Function(
             RemoteDataStatus remoteDataStatus,
             ProfileModel? profileModel,
+            String? contentUrl,
             LocalAccounts? localAccounts,
             DataFailed<dynamic>? dataFailed)?
         initial,
   }) {
     return initial?.call(
-        remoteDataStatus, profileModel, localAccounts, dataFailed);
+        remoteDataStatus, profileModel, contentUrl, localAccounts, dataFailed);
   }
 
   @override
@@ -303,13 +327,15 @@ class _$InitialImpl implements _Initial {
     TResult Function(
             RemoteDataStatus remoteDataStatus,
             ProfileModel? profileModel,
+            String? contentUrl,
             LocalAccounts? localAccounts,
             DataFailed<dynamic>? dataFailed)?
         initial,
     required TResult orElse(),
   }) {
     if (initial != null) {
-      return initial(remoteDataStatus, profileModel, localAccounts, dataFailed);
+      return initial(remoteDataStatus, profileModel, contentUrl, localAccounts,
+          dataFailed);
     }
     return orElse();
   }
@@ -347,6 +373,7 @@ abstract class _Initial implements ProfileState {
   const factory _Initial(
       {final RemoteDataStatus remoteDataStatus,
       final ProfileModel? profileModel,
+      final String? contentUrl,
       final LocalAccounts? localAccounts,
       final DataFailed<dynamic>? dataFailed}) = _$InitialImpl;
 
@@ -354,6 +381,8 @@ abstract class _Initial implements ProfileState {
   RemoteDataStatus get remoteDataStatus;
   @override
   ProfileModel? get profileModel;
+  @override
+  String? get contentUrl;
   @override
   LocalAccounts? get localAccounts;
   @override
